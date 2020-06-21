@@ -15,6 +15,8 @@ export interface GraphEntityTypeMeta {
   icon?: string;
   /** Inherit properties from parent type */
   extends?: GraphEntityTypeMeta;
+  /** Hidden entitiy types are not visible to the user. */
+  hidden?: boolean;
   //   category:
   /** Properties that exist on this entity type */
   properties: GraphPropertyMeta[];
