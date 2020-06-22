@@ -17,7 +17,11 @@ export interface GraphEntityTypeMeta {
   extends?: GraphEntityTypeMeta;
   /** Hide this relationship from the user. */
   hidden?: boolean;
-  /** Properties that exist on this entity type */
+  /**
+   * Properties that exist on this entity type.
+   * Properties definition order will determine which columns will display
+   * in the table by default.
+   */
   properties: GraphPropertyMeta[];
   // extraFilters: those that are not related to a property directly.
 }
